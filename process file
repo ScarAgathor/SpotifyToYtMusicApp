@@ -1,0 +1,12 @@
+incorporate a better searching algorithm cause now< im using up my search quota faster than I would like. consider batching, caching, rate limiting or a better search query.
+Implement some form of user authentication
+handle all the errors to ensure the user is always on my app pave
+
+
+Consider making mobile app version
+Consider making a landing page to descrube what the app does
+add a favicon icon
+remove useless packages before git deployment
+figure out how to encrypt data
+delete useless environment variables and useless node packages
+incorporate typescript
