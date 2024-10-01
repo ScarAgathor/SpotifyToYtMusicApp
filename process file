@@ -1,8 +1,5 @@
 incorporate a better searching algorithm cause now< im using up my search quota faster than I would like. consider batching, caching, rate limiting or a better search query.
 Implement some form of user authentication
-handle all the errors to ensure the user is always on my app pave
-
-
 Consider making mobile app version
 Consider making a landing page to descrube what the app does
 add a favicon icon
@@ -10,3 +7,12 @@ remove useless packages before git deployment
 figure out how to encrypt data
 delete useless environment variables and useless node packages
 incorporate typescript
+incorporate testing
+try to hack my app later on
+
+
+*Important
+handle all the errors, refreshes, redirects and anything that could cause the user to leave my page to ensure the user is always on my app page. -I could use specialized routes and so on.
+remember to remove that annoying space in the refreshToken field.
+On initial user logins save their playlist link somewhere so they don't have to reclick the buttona dn re paste the link
+Handle the page routing at the moment its very ugly.

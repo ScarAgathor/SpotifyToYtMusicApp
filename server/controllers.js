@@ -9,9 +9,9 @@ export async function checkForToken(fieldName) {
         const userDoc = await getDoc(userDocRef);
         if (userDoc.exists()) {
             const userData = userDoc.data();
-            const accessToken = userData[fieldName];
-            if (accessToken !== '') {
-                return accessToken;
+            const token = userData[fieldName];
+            if (token !== '') {
+                return token;
             }
         } else {
             console.error('No such user doc') // might make this create a user doc
@@ -27,6 +27,20 @@ export async function updateUserField (fieldName, fieldValue) {
         const userDocRef = doc(db, "USERS", 'User1');
 
         await updateDoc(userDocRef, {
+            [fieldName]: fieldValue
+        });
+
+    } catch (error) {
+        console.error("Error updating document:", error);
+        throw error;
+    }
+};
+
+export async function setUserField (fieldName, fieldValue) {
+    try {
+        const userDocRef = doc(db, "USERS", 'User1');
+
+        await setDoc(userDocRef, {
             [fieldName]: fieldValue
         });
 
